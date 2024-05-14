@@ -1,7 +1,15 @@
-const PropertyPage = () => {
-  return (
-    <div>PropertyPage</div>
-  )
-}
+"use client";
 
-export default PropertyPage
+import { useParams, useRouter } from "next/navigation";
+
+const PropertyPage = () => {
+  const router = useRouter();
+  const params = useParams();
+  return (
+    <button onClick={() => router.push("/")} className="bg-blue-500 p-2">
+      Go home from {params.id}
+    </button>
+  );
+};
+
+export default PropertyPage;
