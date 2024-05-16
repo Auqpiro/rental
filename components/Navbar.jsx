@@ -8,7 +8,7 @@ import { useState } from "react";
 
 import { FaGoogle } from "react-icons/fa"
 
-import logo from "@/assets/images/logo.png";
+import logo from "@/assets/images/logo-white.png";
 import profileDefault from "@/assets/images/profile.png";
 import notification from "@/assets/icons/notification.svg"
 import hamburger from "@/assets/icons/hamburger.svg"
