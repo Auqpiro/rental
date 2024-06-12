@@ -1,7 +1,8 @@
 import PropertyCard from "@/components/PropertyCard";
+import { fetchProperties } from "@/utils/requests";
 
-const PropertiesPage = () => {
-  const propreties = [];
+const PropertiesPage = async () => {
+  const propreties = await fetchProperties();
   return (
     <section className="px-4 py-6">
       <div className="container-xl lg:container m-auto px-4 py-6">
